@@ -1,11 +1,18 @@
 #include <stdio.h>
 int main(){
+
+    char estado[20];
     int codigo;
     char cidade [20];
     int populacao;
     float area;
     int PIB;
     char pontos [20];
+
+    printf("digite o estado: \n");
+    scanf("%s",&estado);
+
+    
 
     printf("digite sua cidade: \n");
     scanf("%s", &cidade);
