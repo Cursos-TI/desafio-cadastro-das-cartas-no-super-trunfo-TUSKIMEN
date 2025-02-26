@@ -1,24 +1,19 @@
 #include <stdio.h>
 int main(){
-    char país[10];
-
-    char estado[20];
-    int codigo;
-    char cidade [20];
+    char pais;
+    char estado;
+    char codigo[5];
+    char cidade [10];
     int populacao;
     float area;
     int PIB;
-    char pontos [20];
-
-    printf("vamos cadastrar seu país:\n");
-    printf("digite seu país:\n");
-    scanf("%s",&país);
+    int pontos;
 
     printf("digite o estado: \n");
     scanf("%s",&estado);
 
     printf("digite o codigo: \n");
-    scanf("%d", &codigo);
+    scanf("%s", &codigo);
 
     printf("digite sua cidade: \n");
     scanf("%s", &cidade);
