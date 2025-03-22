@@ -32,15 +32,17 @@ int main(){
     scanf("%d", &pontos);
 
     float densidade =(float) populacao/area; //variavel;
+    float PIBpercapita =(float) PIB / populacao; //variavel
 
     printf("estado: %s \n",estado);
     printf("codigo: %s \n",codigo);
     printf("cidade: %s \n",cidade);
     printf("populacao: %d \n",populacao);
-    printf("area: %.2f \n",area);
-    printf("PIB: %d \n",PIB);
+    printf("area: %.2f Km² \n",area);
+    printf("PIB: %d milhões de reais \n",PIB);
     printf("pontos turisticos: %d \n",pontos);
-    printf("desidade:%.2f\n",densidade);
+    printf("desidade popolacional:%.2f hab/Km²\n",densidade);
+    printf("PIB per Capita: %.2f reais \n", PIBpercapita);
 
     char estado2[5];
     char codigo2[5];
@@ -72,15 +74,17 @@ int main(){
     scanf("%d", &pontos2);
 
     float densidade2 =(float) populacao2/area2; //variavel
+    float PIBpercapita2 =(float) PIB2 / populacao2; //variavel
 
     printf("estado: %s \n",estado2);
     printf("codigo: %s \n",codigo2);
     printf("cidade: %s \n",cidade2);
     printf("populacao: %d \n",populacao2);
-    printf("area: %f \n",area2);
-    printf("PIB: %d \n",PIB2);
+    printf("area: %f Km² \n",area2);
+    printf("PIB: %d milhões de reais \n",PIB2);
     printf("pontos turisticos: %d \n",pontos2);
-    printf("desidade:%.2f\n",densidade2);
+    printf("desidade populacional:%.2f hab/Km²\n",densidade2);
+    printf("PIB per Capita: %.2f reais \n", PIBpercapita2);
 
 
     
