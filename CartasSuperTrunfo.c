@@ -8,6 +8,7 @@ int main(){
     float area;
     int PIB;
     int pontos;
+    
 
     printf("digite o estado: \n");
     scanf("%s", &estado);
@@ -30,14 +31,16 @@ int main(){
     printf("digites pontos turisticos: \n");
     scanf("%d", &pontos);
 
+    float densidade =(float) populacao/area; //variavel;
+
     printf("estado: %s \n",estado);
     printf("codigo: %s \n",codigo);
     printf("cidade: %s \n",cidade);
     printf("populacao: %d \n",populacao);
-    printf("area: %f \n",area);
+    printf("area: %.2f \n",area);
     printf("PIB: %d \n",PIB);
     printf("pontos turisticos: %d \n",pontos);
-
+    printf("desidade:%.2f\n",densidade);
 
     char estado2[5];
     char codigo2[5];
@@ -68,6 +71,8 @@ int main(){
     printf("digites pontos turisticos: \n");
     scanf("%d", &pontos2);
 
+    float densidade2 =(float) populacao2/area2; //variavel
+
     printf("estado: %s \n",estado2);
     printf("codigo: %s \n",codigo2);
     printf("cidade: %s \n",cidade2);
@@ -75,6 +80,7 @@ int main(){
     printf("area: %f \n",area2);
     printf("PIB: %d \n",PIB2);
     printf("pontos turisticos: %d \n",pontos2);
+    printf("desidade:%.2f\n",densidade2);
 
 
     
