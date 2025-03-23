@@ -1,18 +1,16 @@
 #include <stdio.h>
 int main(){
-    char pais;
-    char estado[5];
+    char estado[1];
     char codigo[5];
     char cidade [10];
     int populacao;
     float area;
     int PIB;
     int pontos;
-    
 
     printf("digite o estado: \n");
     scanf("%s", &estado);
-
+    
     printf("digite o codigo: \n");
     scanf("%s", &codigo);
 
@@ -87,12 +85,14 @@ int main(){
     printf("PIB per Capita: %.2f reais \n", PIBpercapita2);
 
 
+    float comparacaop =(int) populacao<populacao2; // variavel
+
+    printf ("comparação: %f \n", comparacaop);
+
+
     
     
     return 0;
 
 
 }
-
-
- 
