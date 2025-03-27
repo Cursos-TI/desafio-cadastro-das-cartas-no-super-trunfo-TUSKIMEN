@@ -84,14 +84,30 @@ int main(){
     printf("desidade populacional:%.2f hab/Km²\n",densidade2);
     printf("PIB per Capita: %.2f reais \n", PIBpercapita2);
 
+    float CARTA1 =(float) populacao+area+PIB+pontos+PIBpercapita+1/densidade;//variavel super poder carta 1
+    float CARTA2 =(float) populacao2+area2+PIB2+pontos2+PIBpercapita2+1/densidade2;//variavel super poder carta 2
 
-    float comparacaop =(int) populacao<populacao2; // variavel
+    float combatepopulação=populacao>populacao2;
+    float combatearea=area>area2;
+    float combatepib=PIB>PIB2;
+    float combatepontos=pontos>pontos2;
+    float combatedensidade=densidade<densidade2;
+    float combatePIBpercapita=PIBpercapita>PIBpercapita2;
+    float combatesuper=CARTA1>CARTA2;
 
-    printf ("comparação: %f \n", comparacaop);
-
+    printf("considere 1 para verdadeiro e 0 para falso\n");
+    printf("populaçao carta 1 venceu: %f\n",combatepopulação);
+    printf("area carta 1 venceu: %f\n",combatearea);
+    printf("PIB carta 1 venceu: %f\n",combatepib); 
+    printf("pontos turisticos carta 1 venceu: %f\n",combatepontos);
+    printf("densidade populacional carta 1 venceu: %f\n",combatedensidade);// qual menor venci 
+    printf("PIB per capita carta 1 venceu: %f\n",combatePIBpercapita);
+    printf("super poder carta 1 venceu:%f\n",combatesuper);
 
     
     
+
+
     return 0;
 
 
