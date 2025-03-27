@@ -84,8 +84,8 @@ int main(){
     printf("desidade populacional:%.2f hab/Km²\n",densidade2);
     printf("PIB per Capita: %.2f reais \n", PIBpercapita2);
 
-    float CARTA1 =(float) populacao+area+PIB+pontos+PIBpercapita+1/densidade;//variavel super poder carta 1
-    float CARTA2 =(float) populacao2+area2+PIB2+pontos2+PIBpercapita2+1/densidade2;//variavel super poder carta 2
+    float CARTA1 =(float) populacao+area+PIB+pontos+PIBpercapita+densidade;//variavel super poder carta 1
+    float CARTA2 =(float) populacao2+area2+PIB2+pontos2+PIBpercapita2+densidade2;//variavel super poder carta 2
 
     float combatepopulação=populacao>populacao2;
     float combatearea=area>area2;
